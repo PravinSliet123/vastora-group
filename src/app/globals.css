@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "rubik";
+  src: url("/fonts/RubikDirt-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "amst";
+  src: url("/fonts/Amsterdam Personal Use.ttf") format("truetype");
+}
+@font-face {
+  font-family: "robo";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+.font-rubik {
+  font-family: "rubik";
+}
+.font-amst {
+  font-family: "amst";
+}
+.font-robo {
+  font-family: "robo";
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +40,14 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+
+.bg-image{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.9)),
+                  url("./assets/bg_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
